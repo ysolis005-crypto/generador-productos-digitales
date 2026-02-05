@@ -1,26 +1,19 @@
 function generar() {
   var nicho = document.getElementById("nicho").value;
   var resultado = document.getElementById("resultado");
-  var btnWhatsapp = document.getElementById("btnWhatsapp");
 
-  if (nicho.trim() === "") {
-    resultado.innerHTML = "<p style='color:red'>Por favor escribe un nicho</p>";
-    btnWhatsapp.style.display = "none";
+  if (nicho === "") {
+    resultado.innerHTML = "Escribe un nicho, por favor.";
     return;
   }
 
   resultado.innerHTML =
-    "<h3>Ideas de productos digitales para el nicho: " + nicho + "</h3>" +
+    "<h3>Ideas para el nicho: " + nicho + "</h3>" +
     "<ul>" +
-    "<li>📘 Guía práctica en PDF sobre " + nicho + "</li>" +
-    "<li>✅ Checklist paso a paso de " + nicho + "</li>" +
-    "<li>🎥 Mini curso en video de " + nicho + "</li>" +
-    "<li>🧩 Plantillas listas para usar en " + nicho + "</li>" +
+    "<li><strong>Guía rápida de " + nicho + "</strong><br>Precio sugerido: $7 USD</li><br>" +
+    "<li><strong>Checklist práctica de " + nicho + "</strong><br>Precio sugerido: $5 USD</li><br>" +
+    "<li><strong>Mini curso de " + nicho + "</strong><br>Precio sugerido: $27 USD</li><br>" +
+    "<li><strong>Plantillas para " + nicho + "</strong><br>Precio sugerido: $15 USD</li><br>" +
+    "<li><strong>Planner mensual de " + nicho + "</strong><br>Precio sugerido: $9 USD</li>" +
     "</ul>";
-
-  var mensaje = "Hola, quiero el plan completo del producto digital para el nicho: " + nicho;
-  var mensajeCodificado = encodeURIComponent(mensaje);
-
-  btnWhatsapp.href = "https://wa.me/573236651921?text=" + mensajeCodificado;
-  btnWhatsapp.style.display = "inline-block";
 }
