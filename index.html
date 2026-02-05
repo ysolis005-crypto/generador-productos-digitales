@@ -1,24 +1,38 @@
-function generar() {
-  var nicho = document.getElementById("nicho").value;
-  var resultado = document.getElementById("resultado");
-  var btnWhatsapp = document.getElementById("btnWhatsapp");
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Generador de Ideas Rentables</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-  if (nicho.trim() === "") {
-    resultado.innerHTML = "<p style='color:red'>Por favor escribe un nicho</p>";
-    return;
-  }
+<body>
 
-  resultado.innerHTML =
-    "<h3>Ideas de productos digitales para el nicho: " + nicho + "</h3>" +
-    "<ul>" +
-    "<li>Guía práctica en PDF sobre " + nicho + "</li>" +
-    "<li>Checklist paso a paso de " + nicho + "</li>" +
-    "<li>Mini curso en video de " + nicho + "</li>" +
-    "<li>Plantillas listas para usar en " + nicho + "</li>" +
-    "</ul>";
+  <h1>Generador de Ideas Rentables de Productos Digitales</h1>
 
-  var mensaje = "Hola, quiero el plan completo del producto digital para el nicho: " + nicho;
-  var mensajeCodificado = encodeURIComponent(mensaje);
+  <p>¿Quieres que te entregue el plan completo con estructura y textos listos para vender?</p>
 
-  btnWhatsapp.href = "https://wa.me/573236651921?text=" + mensajeCodificado;
-}
+  <input 
+    type="text" 
+    id="nicho" 
+    placeholder="Ejemplo: marketing digital">
+
+  <br><br>
+
+  <button onclick="generar()">Quiero ideas rentables</button>
+
+  <br><br>
+
+  <div id="resultado"></div>
+
+  <br>
+
+  <a id="btnWhatsapp" href="#" target="_blank">
+    Escríbeme por WhatsApp
+  </a>
+
+  <!-- CONEXIÓN CON JAVASCRIPT (OBLIGATORIA) -->
+  <script src="script.js"></script>
+
+</body>
+</html>
