@@ -1,7 +1,7 @@
 function generar() {
   var nicho = document.getElementById("nicho").value;
   var resultado = document.getElementById("resultado");
-  var btnWhatsapp = document.getElementById("btnWhatsapp");
+var btnWhatsapp = document.getElementById("btnWhatsapp");
   
   if (nicho === "") {
     resultado.innerHTML = "<p style='color:red;'>Por favor escribe un nicho</p>";
@@ -16,8 +16,9 @@ function generar() {
     "<li>Mini curso en video de " + nicho + "</li>" +
     "<li>Plantillas listas para usar en " + nicho + "</li>" +
     "</ul>";
-}
   var mensaje = "Hola, quiero el plan completo del producto digital para el nicho: " + nicho;
 var mensajeCodificado = encodeURIComponent(mensaje);
 
-btnWhatsapp.href = "https://wa.me/573236651921?text=" + mensajeCodific
+btnWhatsapp.href = "https://wa.me/573236651921?text=" + mensajeCodificado;
+
+}
