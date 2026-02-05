@@ -16,6 +16,8 @@ function generar() {
     "<li>Mini curso en video de " + nicho + "</li>" +
     "<li>Plantillas listas para usar en " + nicho + "</li>" +
     "</ul>";
+  
+   }
   var mensaje = "Hola, quiero el plan completo del producto digital para el nicho: " + nicho;
 var mensajeCodificado = encodeURIComponent(mensaje);
 
