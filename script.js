@@ -28,5 +28,4 @@ function generar() {
   "✔️ Ideas para venderlo\n\n" +
   "Quedo atenta 😊";
 var mensajeCodificado = encodeURIComponent(mensaje);
-
 btnWhatsapp.href = "https://wa.me/573236651921?text=" + mensajeCodificado;
