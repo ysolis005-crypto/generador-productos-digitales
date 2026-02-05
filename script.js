@@ -20,6 +20,3 @@ function generar() {
 var mensajeCodificado = encodeURIComponent(mensaje);
 
 btnWhatsapp.href = "https://wa.me/573236651921?text=" + mensajeCodificado;
-
-}
-
