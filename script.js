@@ -18,7 +18,6 @@ function generar() {
     "</ul>";
   
    }
-
  var mensaje =
   "Hola 👋, acabo de usar el Generador de Ideas Rentables y me interesa el PLAN COMPLETO.\n\n" +
   "📌 Nicho: " + nicho + "\n\n" +
@@ -27,5 +26,7 @@ function generar() {
   "✔️ Qué incluir en cada módulo\n" +
   "✔️ Ideas para venderlo\n\n" +
   "Quedo atenta 😊";
+
 var mensajeCodificado = encodeURIComponent(mensaje);
+
 btnWhatsapp.href = "https://wa.me/573236651921?text=" + mensajeCodificado;
