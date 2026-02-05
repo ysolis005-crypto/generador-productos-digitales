@@ -1,9 +1,29 @@
-<input type="text" id="nicho" placeholder="Ejemplo: marketing digital">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Generador de Productos Digitales</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<button onclick="generar()">Quiero ideas rentables</button>
+  <div class="container">
+    <h1>Generador de Productos Digitales</h1>
+    <p>Escribe tu nicho y obtén ideas listas para vender</p>
 
-<div id="resultado"></div>
+    <input type="text" id="nicho" placeholder="Ejemplo: marketing digital">
+    <button onclick="generar()">Generar ideas</button>
 
-<a id="btnWhatsapp" target="_blank" style="display:none;">
-  Escríbeme por WhatsApp
-</a>
+    <div id="resultado"></div>
+
+    <div class="cta">
+      <p>¿Quieres el plan completo + textos de venta?</p>
+      <a href="https://wa.me/573236651921" target="_blank">
+        Escríbeme por WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
